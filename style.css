@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-family: 'Mate SC', serif;
+}
+body{
+    background-color: black;
+}
+#container{
+    width: 75%;
+    height: 500px;
+    background-color: #E0E0E0;
+    margin: 15px auto;
+}
+
+#calculator{
+    width: 35%;
+    height: 450px;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    border-radius: 7px;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px 12px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12)
+    ;
+    top: 20px;
+}
+#result{
+    height: 120px;
+    position: relative;
+    bottom: 10;
+}
+#history{
+    position: relative;
+    top: -15px;
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+#output{
+    margin: 5 5 0 0;
+    text-align: right;
+    height: 60px;
+    font-size: 30px;
+}
+#keyboard{
+    height: 400px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: white;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.number:active, .operator:active{
+    font-size: 13;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+button:nth-child(4){
+    font-size: 20px;
+    background-color: turquoise;
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color: orange;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: rgb(233, 126, 126);
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: rgb(76, 79, 226);
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: rgb(143, 39, 228);
+}
+#string_test{
+    font-size: 30px;
+    color: blue;
+}
